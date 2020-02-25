@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<title>AVOID ALL FRIENDS - The Social Anxiety Game</title>
+		<script src="js/phaser.js"></script>
+		<script src="js/Boot.js"></script>
+		<script src="js/Preloader.js"></script>
+		<script src="js/MainMenu.js"></script>
+		<script src="js/Game.js"></script>
+		<script src="js/GameOverScreen.js"></script>
+		<script src="js/Help.js"></script>
+		<script src="js/About.js"></script>
+	</head>
+	<body><center>
+		<div id="gameContainer"></div>
+		<script type="text/javascript">
+			window.onload = function() {
+				//	Create your Phaser game and inject it into the gameContainer div.
+				var game = new Phaser.Game(899, 500, Phaser.AUTO, 'gameContainer');
+
+				//	Add the States your game has.
+				game.state.add('Boot', TheWalkingLady.Boot);
+				game.state.add('Preloader', TheWalkingLady.Preloader);
+				game.state.add('MainMenu', TheWalkingLady.MainMenu);
+				game.state.add('Game', TheWalkingLady.Game);
+				game.state.add('GameOverScreen', TheWalkingLady.GameOverScreen);
+				game.state.add('Help', TheWalkingLady.Help);
+				game.state.add('About', TheWalkingLady.About);
+
+				//	Now start the Boot state.
+				game.state.start('Boot');
+			};
+		</script>
+		            Art Work by Iain <a href="https://twitter.com/helloiain" class="twitter-follow-button" data-show-count="false">Follow @helloiain</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>Game design and concept by <a href="https://twitter.com/guyphenix" class="twitter-follow-button" data-show-count="false">Follow @guyphenix</a><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          
+		</center>
+	</body>
+</html>
