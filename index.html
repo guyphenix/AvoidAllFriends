@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    	<meta charset="UTF-8" />
+		<title>AVOID ALL FRIENDS - The Social Anxiety Game</title>
+		<script src="js/phaser.js"></script>
+		<script src="js/Boot.js"></script>
+		<script src="js/Preloader.js"></script>
+		<script src="js/MainMenu.js"></script>
+		<script src="js/Game.js"></script>
+		<script src="js/GameOverScreen.js"></script>
+		<script src="js/Help.js"></script>
+		<script src="js/About.js"></script>
+<style>
+div.container {
+    width: 100%;
+    border: 0px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: black;
+    background-color: white;
+    clear: left;
+    text-align: center;
+}
+
+
+article {
+    margin-left: 145px;
+    border-left: 0px white;
+    padding: 1em;
+    overflow: hidden;
+}
+
+h1 { color: #111; font-family: 'Helvetica Neue', sans-serif; font-size: 75px; font-weight: bold; letter-spacing: -1px; line-height: 1; text-align: center; }
+
+h2 { color: #111; font-family: 'Open Sans', sans-serif; font-size: 20px; font-weight: 300; line-height: 32px; margin: 0 0 72px; text-align: center; }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+ <h1>AVOID ALL FRIENDS</h1>
+ <h2>A social anxiety game created by <a href="http://guyphenix.com">Guy Phenix</a>,<a href="https://twitter.com/helloiain">Iain Andrew McAuley</a> and <a href="https://soundcloud.com/matchnoise/">Matchnoise</a> </h2>
+</header>
+<article>
+  	<div id="gameContainer"></div>
+		<script type="text/javascript">
+			window.onload = function() {
+				//	Create your Phaser game and inject it into the gameContainer div.
+				var game = new Phaser.Game(899, 500, Phaser.AUTO, 'gameContainer');
+
+				//	Add the States your game has.
+				game.state.add('Boot', TheWalkingLady.Boot);
+				game.state.add('Preloader', TheWalkingLady.Preloader);
+				game.state.add('MainMenu', TheWalkingLady.MainMenu);
+				game.state.add('Game', TheWalkingLady.Game);
+				game.state.add('GameOverScreen', TheWalkingLady.GameOverScreen);
+				game.state.add('Help', TheWalkingLady.Help);
+				game.state.add('About', TheWalkingLady.About);
+
+				//	Now start the Boot state.
+				game.state.start('Boot');
+			};
+		</script></article>
+<footer>
+   
+    <h1>Buy The Poster</h1>
+    <a href="http://avoidallfriends.bigcartel.com"target="_blank"> <img alt="avoid all friends poster" src="http://guyphenix.com/aaf/aafposter.PNG" > </a>
+    <br/>
+    <h1>The Exhibition Video</h1>
+    <iframe src="https://player.vimeo.com/video/186006001" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    
+</footer>
+
+</div>
+
+</body>
+</html>
+
+
+<!DOCTYPE HTML>
+<html>
+	<head>
+	
+	</head>
+	<body><center>
+	
+	</script>
+          
+		</center>
+	</body>
+</html>
